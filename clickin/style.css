@@ -1,0 +1,1060 @@
+
+/*
+Theme Name: Tinquer
+Theme URI: www.tinquer-com
+Author: Martin Simanek
+Author URI: http://www.simis.cz/
+Description: 
+Version: 1.0.1
+
+*/
+
+@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=574e0598-bf12-4637-b66e-0655389ba99f&fontids=774932,774938");
+@font-face {
+	font-family: "Futura W02 Book";
+	src: url("./fonts/774932/f846ad08-e9ee-4ad6-9cf7-616084da523c.eot?#iefix");
+	src: url("./fonts/774932/f846ad08-e9ee-4ad6-9cf7-616084da523c.eot?#iefix") format("eot"), url("./fonts/774932/bc017822-de5a-4b1a-8eed-ed8e06fec708.woff") format("woff"), url("./fonts/774932/0ab2192d-e680-4f79-a06b-017307993274.ttf") format("truetype"), url("./fonts/774932/90849783-61a3-41a1-928c-0e77e65fe53c.svg#90849783-61a3-41a1-928c-0e77e65fe53c") format("svg");
+}
+@font-face {
+	font-family: "Futura W02 Medium";
+	src: url("./fonts/774938/f54fb8d6-5840-4dcd-abb6-a361c3515b63.eot?#iefix");
+	src: url("./fonts/774938/f54fb8d6-5840-4dcd-abb6-a361c3515b63.eot?#iefix") format("eot"), url("./fonts/774938/ee0094f9-615c-4fc9-8880-4188633debc4.woff") format("woff"), url("./fonts/774938/f0081d54-47f3-4cfa-9bc7-8d0318d3eb14.ttf") format("truetype"), url("./fonts/774938/f3818821-bb07-46d0-81ff-b2f6559f71be.svg#f3818821-bb07-46d0-81ff-b2f6559f71be") format("svg");
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Futura W02 Book', sans-serif;
+	font-size: 100%;
+}
+.site-content {
+	height: auto;
+}
+#wrapper {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+img {
+	border-style: none;
+}
+#strana {
+	background: white;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+#logo {
+	position: absolute;
+	top: -10%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 420px;
+	height: 420px;
+}
+#logo img {
+	width: inherit;
+	//for ie8   width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+/*= HEADER & NAVIGATION--------------------------------------------------------*/
+a {
+	color: black;
+}
+a:hover {
+	color: #CECACB;
+}
+#nav {
+	width: 0px;
+	z-index: -1;
+	float: right;
+	position: fixed;
+	right: 0;
+	top: 0;
+	background: white;
+	height: 100%;
+	text-align: left;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+#nav p {
+	border-bottom: 5px solid black;
+	width: 30px;
+	margin-bottom: 0;
+}
+#nav ul {
+	list-style: none;
+	margin-top: 60px;
+}
+#nav li {
+	float: left;
+	display: block;
+	padding: 30px 0;
+	clear: both;
+	text-transform: lowercase;
+}
+#nav li a {
+	color: #000;
+	font-size: 15px;
+	line-height: 1.9em;
+	text-decoration: none;
+	width: 20px;
+	padding: 6px 0;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-mini.png) no-repeat;
+}
+#nav li a.active {
+	color: #fff;
+}
+#nav li a:hover {
+	color: #CECACB;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-mini-seda.png) no-repeat;
+}
+/*KONTAKT******************************************************/
+#nav-kontakt {
+	width: 140px;
+	z-index: 20;
+	float: right;
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+	text-align: left;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+#nav-kontakt  p {
+	border-bottom: 5px solid black;
+	width: 30px;
+	margin-bottom: 0;
+}
+#nav-kontakt  ul {
+	list-style: none;
+	margin-top: 60px;
+}
+#nav-kontakt  li {
+	float: left;
+	display: block;
+	padding: 30px 0;
+	clear: both;
+	text-transform: lowercase;
+}
+#nav-kontakt  li a {
+	color: #fff;
+	font-size: 15px;
+	line-height: 1.9em;
+	text-decoration: none;
+	width: 20px;
+	padding: 6px 0;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-mini-bila1.png) no-repeat;
+}
+#nav-kontakt  li a.active {
+	color: #fff;
+}
+#nav-kontakt  li a:hover {
+	color: #CECACB;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-mini-seda.png) no-repeat;
+}
+#kontakt-menu {
+	position: absolute;
+	top: 15%;
+	right: 20%;
+	width: 45%;
+	min-width: 300px;
+	height: 590px;
+	background: white;
+	z-index: 999;
+}
+.kontakt-inside {
+	padding: 40px 70px;
+	background: white;
+	z-index: 999;
+	height: 510px;
+	font-size: 0.9em;
+}
+.nadpis-kontakt {
+	text-transform: lowercase;
+	color: black;
+	font-size: 2.6em;
+	line-height: 1.9em;
+	display: box;
+	clear: both;
+	font-weight: 600;
+	margin: 40px 0;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna.png) no-repeat;
+}
+/* .facebook:hover > .w2bslikebox {
+	margin-left: -230px;
+	z-index: 999;
+}
+.facebook {
+	position: absolute;
+	height: 180px;
+	top: 300px;
+	width: 50px;
+	background: black;
+	margin-left: -50px;
+}
+.facebook:hover {
+	position: absolute;
+	height: 180px;
+	width: 60px;
+	background: black;
+	margin-left: -60px;
+}
+*/
+/*POD STRANKA*/
+#nav-pod {
+	width: 140px;
+	z-index: 999;
+	float: right;
+	position: fixed;
+	right: 0;
+	top: 0;
+	background: white;
+	height: 100%;
+	text-align: left;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+#nav-pod p {
+	border-bottom: 5px solid black;
+	width: 30px;
+	margin-bottom: 0;
+}
+#nav-pod ul {
+	list-style: none;
+	margin-top: 60px;
+}
+#nav-pod li {
+	float: left;
+	display: block;
+	padding: 30px 0;
+	clear: both;
+	text-transform: lowercase;
+}
+#nav-pod li a {
+	color: #000;
+	font-size: 15px;
+	line-height: 1.9em;
+	text-decoration: none;
+	width: 20px;
+	padding: 6px 0;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-mini.png) no-repeat;
+}
+#nav-pod li a.active {
+	color: #fff;
+}
+#nav-pod li a:hover {
+	color: #CECACB;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-mini-seda.png) no-repeat;
+}
+/*MENU DOLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#nav-dole {
+	position: fixed;
+	display: none;
+	bottom: 0px;
+	z-index: 9999;
+	background: white;
+	padding: 20px;
+	width: 100%;
+	margin: 0 auto;
+}
+#nav-dole ul {
+	margin: 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	display: block !important;
+	margin-left: -55px;
+}
+#nav-dole li {
+	text-decoration: none;
+	margin: 0;
+	width: 20%;
+	float: left;
+	clear: right;
+	text-transform: lowercase;
+}
+#nav-dole li a {
+	color: #000;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 10px 0;
+	width: 50px;
+	display: box;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-mini.png) no-repeat;
+}
+#nav-dole li a:hover {
+	color: #CECACB;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-mini-seda.png) no-repeat;
+}
+.logo-menu img {
+	width: 70px;
+	margin-left: -5px;
+	position: absolute;
+	top: 80%;
+	height: 70px;
+}
+/*MENU NAHORE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#nav-top {
+	position: absolute;
+	top: 94%;
+	width: 90%;
+	margin: auto;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+#nav-top ul {
+	margin: 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	display: block !important;
+	margin-left: -40px;
+}
+#nav-top li {
+	text-decoration: none;
+	margin: 0;
+	width: 25%;
+	float: left;
+	clear: right;
+	text-transform: lowercase;
+}
+#text_slow h1 {
+	font-size: 1.4em;
+	line-height: 0.4em;
+}
+#text_slow h1 a {
+	color:white;text-decoration:none;
+}
+#text_slow {
+	position: absolute;
+	top: 32%;
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 90px 20px;
+	;
+	text-align: left;
+	position: relative;
+	border: 4px solid white;
+	text-align: center;
+}
+#text_slow_text {
+	max-width: 400px;
+	margin: 0 auto;
+	position: relative;
+	font-size: 1.4em;
+	margin-top: -20px;
+}
+#nav-top li a {
+	color: #fff;
+	font-size: 19px;
+	text-decoration: none;
+	padding: 8px 0;
+	font-family: 'Futura W02 Medium';
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-mensi-bila.png) no-repeat;
+	width: 50px;
+	display: box;
+}
+#nav-top li a.active {
+	color: #fff;
+}
+#nav-top li a:hover {
+	color: #CECACB;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-mensi-seda.png) no-repeat;
+}
+/* blockquote:after {
+	font-size: 5em;
+	content: close-quote;
+	float: right;
+}
+blockquote:before {
+	content: open-quote;
+	font-size: 5em;
+	float: left;
+}
+blockquote p {
+	display: inline;
+}
+*/
+#social {
+	position: absolute;
+	top: 5%;
+	height: 220px;
+	overflow: hidden;
+	width: 100px;
+	right: 0;
+	color: white;
+	font-size: 14px;
+}
+#social ul {
+	list-style: none;
+	display: inline;
+}
+#social a {
+	color: white;
+	text-decoration: none;
+}
+#social li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 0;
+	line-height: 3em;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-mini-bila1.png) no-repeat;
+	width: 50px;
+	display: box;
+}
+#social li a.active {
+	color: #CECACB;
+}
+#social li a:hover {
+	color: #CECACB;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-mini-seda.png) no-repeat;
+}
+.button a {
+	color: white;
+}
+.skryti {
+	width: 100px;
+	height: 200px;
+	margin-top: 20px;
+	overflow: hidden;
+	position: relative;
+}
+.cbp-spmenu-horizontal li {
+	clear: both;
+}
+.cbp-spmenu-horizontal {
+	width: 100px;
+	/*height: 150px;
+*/
+	right: 0;
+	z-index: 00;
+	position: absolute;
+}
+.cbp-spmenu, .cbp-spmenu-push {
+	overflow: hidden;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.cbp-spmenu-top {
+	top: 00px;
+	/*display: none;
+*/
+}
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;
+}
+.datum-news {
+	line-height: 2.6em;
+	float: left;
+	width: 95px;
+	font-size: 22px;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-mensi.png) no-repeat;
+}
+.entry-content {
+	margin-left: 100px;
+	margin-top: 40px;
+	line-height: 1.6em;
+	max-width: 500px;
+	font-size: 13px;
+	position: relative;
+	display: box;
+}
+.entry-content-sirsi {
+	line-height: 1.6em;
+	margin-top: 40px;
+	max-width: 500px;
+	font-size: 13px;
+	position: relative;
+	margin-bottom: 30px;
+}
+.entry-content-sirsi img {
+	margin: 5px 0;
+	width: 130%;
+	height: auto;
+}
+.entry-title {
+	padding: 5px 0;
+	line-height: 2.8em;
+	font-size: 22px;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.entry-title a {
+	padding: 7px 0;
+	line-height: 2.8em;
+	font-size: 22px;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.entry-title  a:hover {
+	color: #CECACB;
+}
+.entry-content img {
+	margin: 5px 0;
+	width: 130%;
+	height: auto;
+}
+.levo-sub {
+	float: left;
+	max-width: 25%;
+	min-width: 200px;
+}
+.levo-sub-menu {
+	margin-top: 130px;
+}
+.levo-sub ul {
+	list-style: none;
+	margin-top: 170px;
+	display: inline;
+}
+.levo-sub ul li {
+	line-height: 1.7em;
+	font-size: 0.9em;
+}
+.levo-sub ul li a {
+	color: black;
+	text-decoration: none;
+}
+.levo-sub ul li a:hover {
+	color: #CECACB;
+}
+.l-vnitrek-sub {
+	padding: 20px 20px;
+	box-sizing: border-box;
+}
+.p-vnitrek-sub {
+	padding: 40px 00px;
+	box-sizing: border-box;
+}
+.l-vnitrek p {
+	font-size: 1em;
+}
+.pravo-sub {
+	float: left;
+	margin-right: 140px;
+	position: relative;
+}
+.nadpis-kategorie {
+	font-family: 'Futura W02 Medium';
+	float: left;
+	text-transform: lowercase;
+	color: black;
+	font-size: 2.3em;
+	line-height: 1.5em;
+	display: box;
+	clear: both;
+	font-weight: bold;
+	margin: 40px 0;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna.png) no-repeat;
+}
+.content-single {
+	margin-top: -10px;
+}
+.sekce {
+	max-width: 1100px;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 50px;
+	margin-top: -50px;
+}
+articles {
+	position: relative;
+	margin-bottom: 60px;
+}
+.browsehappy {
+	width: 100%;
+	position: relative;
+	height: 600px;
+	background: grey;
+}
+/*= SLIDES STYLING--------------------------------------------------------*/
+.levo {
+	float: left;
+	width: 49%;
+	background: white;
+}
+.l-vnitrek {
+	padding: 50px;
+	float: right;
+}
+.texty {
+	font-size: 0.9em;
+	line-height: 1.4em;
+	max-width: 450px;
+}
+.p-vnitrek {
+	padding: 50px;
+	float: left;
+}
+.pravo {
+	float: right;
+	width: 49%;
+	background: white;
+}
+.nadpis-clanek {
+	font-size: 1.8em;
+	line-height: 1.3em;
+	font-weight: 600;
+	line-height: 2em;
+}
+.nadpis {
+	font-size: 1.5em;
+	font-weight: 600;
+	line-height: 5em;
+}
+.cislo {
+	font-family: 'Futura W02 Medium', sans-serif;
+	font-weight: bold;
+	text-transform: lowercase;
+	color: black;
+	font-size: 3.6em;
+	background: url(http://tinquer.com/wp-content/uploads/2014/03/cara-cerna-vetsi.png) no-repeat;
+	line-height: 1.6em;
+	margin-top: 40px;
+}
+.cislo a {
+	color: black;
+}
+.fotky-pravo {
+	position: relative;
+	float: right;
+	width: 51%;
+	height: 100%;
+	height: 100%;
+	background-position: fixed;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: -moz-calc(100% - (0px + 0px));
+	height: -webkit-calc(100% - (0px + 0px));
+	height: calc(100% - (0px + 0px));
+	display: block;
+}
+.fotky-levo {
+	position: relative;
+	float: left;
+	width: 51%;
+	height: 100%;
+	height: 100%;
+	background-position: fixed;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: -moz-calc(100% - (0px + 0px));
+	height: -webkit-calc(100% - (0px + 0px));
+	height: calc(100% - (0px + 0px));
+	display: block;
+}
+.podobrazek {
+	position: fixed;
+	z-index: -99;
+	width: 100%;
+	height: 100%;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.slider {
+	width: 100%;
+	height: 1100px;
+	clear: both;
+	background: white;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+#slide3 {
+	color: #fff;
+	height: 1100px;
+	width: 100%;
+	clear: both;
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+/*= FOOTER --------------------------------------------------------*/
+#cara_levo {
+}
+#paticka {
+	width: 100%;
+	background: #333;
+	z-index: 9999;
+	position: relative;
+	overflow: auto;
+}
+.polozka {
+	width: 33.3%;
+	float: left;
+	margin: 40px 0;
+	padding: 0 40px;
+	box-sizing: border-box;
+	clear: right;
+	color: white;
+	font-size: 0.75em;
+	position: relative;
+	font-weight: 400;
+}
+.polozka ul {
+	list-style: none;
+	line-height: 1.5em;
+}
+.polozka li p {
+}
+.polozka li a {
+	color: white;
+	text-decoration: none;
+	font-family: 'futura regular', sans-serif;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.polozka  a:hover {
+	color: #CECACB;
+}
+.datum {
+	float: left;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.odsazeni {
+	margin-left: 50px;
+	position: relative;
+	max-width: 280px;
+}
+.cara {
+	height: 200px;
+	border-left: 1px solid grey;
+	width: 1px;
+	float: left;
+	margin-top: 40px
+}
+.edit-link {
+	margin-top: 60px;
+}
+.edit-link a {
+	padding: 7px 10px;
+	margin-top: 50px;
+	background: #FF0086;
+	color: white;
+	text-decoration: none;
+}
+.edit-link a:hover {
+	background: black;
+	color: white;
+}
+.nahoru {
+	display: none;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+	z-index: 99999;
+	opacity: 0.3;
+	-webkit-transition: height 300ms ease-in;
+	-moz-transition: height 300ms ease-in;
+	-ms-transition: height 300ms ease-in;
+	-o-transition: height 300ms ease-in;
+	transition: height 300ms ease-in;
+	margin: auto;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.nahoru:hover {
+	opacity: 1;
+}
+#odsazeni-portfolio {
+	margin-left: 30px;
+}
+#paticka-pravo {
+	max-width: 30%;
+}
+#paticka-stred {
+	width: 165px;
+	margin-bottom: 40px;
+	font-size: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+#social-dole {
+	text-align: center;
+}
+@media screen and (max-width: 1600px) {
+.slider {
+	height: 930px;
+}
+#slide3 {
+	height: 930px;
+}
+.polozka {
+	margin: 30px 0;
+	padding: 0px 10px
+}
+}
+@media screen and (max-width: 1366px) {
+.slider {
+	height: 750px;
+}
+#slide3 {
+	height: 750px;
+}
+}
+.polozka {
+	margin: 30px 0;
+	padding: 0px 10px
+}
+}
+@media screen and (max-width: 1280px) {
+.slider {
+	height: 700px;
+}
+#slide3 {
+	height: 700px;
+}
+.polozka {
+	margin: 30px 0;
+	padding: 0px 10px  ;}#paticka-pravo{max-width:60%;
+}
+}
+
+
+
+@media screen and (max-width:950px){
+/*#nav{display:none;width:0px;}
+#strana{margin-right:0;width:100%;background:white;} */
+.slider{width:100%;height:650px;}
+.nadpis{line-height:2em;}
+.polozka ul{margin:20px 0;padding:0px 20px}
+.p-vnitrek-sub{width:100%;} .texty{font-size:0.8em;line-height:1.5em;}
+.pravo-sub{float:left;width:50%;}
+.entry-content img{margin:5px 0;width:100%;height:auto;}
+.entry-content-sirsi img{margin:5px 0;width:100%;height:auto;}  
+#paticka-pravo{max-width:60%;}
+}
+             
+
+@media screen and (min-width:500px) and (max-width:750px){
+
+.cara{display:none;}
+#nav-pod{display:none;width:0px;}
+#nav{display:none;width:0px;}
+.texty{font-size:0.8em;line-height:1.5em;}
+#strana{margin-right:0;width:100%;background:white;} 
+.fotky-pravo{height:750px;  }
+.fotky-levo{height:750px; }
+                               
+.text_slow{display:none;}
+.levo-sub{clear:both;width:80%;}
+.pravo-sub{width:80%;}
+.entry-content{margin-left:0px;}
+#nav-pod{display:none;}
+.l-vnitrek-sub{padding:0px;}
+.p-vnitrek-sub{padding:0px;}
+#sekce{width:100%;min-width:300px;}
+.datum-news{padding:5px 0;}
+#nav-dole{display:inline;}
+ #paticka-pravo{max-width:40%;}
+#posunute{margin-left:0px;}
+.entry-content-sirsi img{margin:5px 0;width:100%;height:auto;}
+.entry-content img{margin:5px 0;width:100%;height:auto;}
+.nadpis{font-size:1.7em;line-height:2.8em;font-weight:600;width:100%;margin-left:5px;}    
+}
+
+
+@media screen and  (min-width:100px) and (max-width:500px){
+
+html,body{margin:0;padding:0;border:0;}
+body{word-wrap:break-word;-webkit-text-size-adjust:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+table{width:auto;border-collapse:collapse;border-spacing:0;}
+.cara{display:none;}
+.fotky-pravo{width:100%;}
+.fotky-levo{width:100%;}
+.levo{width:90%;padding:0px;clear:both;margin:0px;background:white;}
+.pravo{width:90%;padding:0px;clear:both;margin:0px;float:left;background:white;}
+.texty{font-size:0.9em;padding:0px;margin:10px;width:100%;background:white;padding-right:10px;}
+#strana{margin-right:0;width:100%;background:white;}
+#nav{display:none;width:0px;}
+#nav-top li a{color:#fff;font-size:20px;text-decoration:none;display:box;}
+.nadpis{font-size:1.7em;line-height:2.8em;font-weight:600;width:100%;margin-left:5px;}
+.cislo{color:black;font-size:3em;display:box;margin-left:5px;font-weight:600;}
+#slide3{}
+#nav-kontakt{display:none;}
+.entry-content{margin-left:0px;}
+#nav-pod{display:none;}
+#kontakt-menu{width:100%;position:relative;left:0;right:0;margin-right:0;}
+.kontakt-inside{padding:20px;}
+#sekce{width:100%;}
+.levo-sub{clear:both;width:80%;}
+.l-vnitrek-sub{padding:15px;}
+.l-vnitrek{padding:0px;margin:0;float:left;}
+.pravo-sub{float:left;width:100%;}
+.p-vnitrek{padding:0px;margin:0;}
+.p-vnitrek-sub{width:100%;padding:15px;}
+#odsazeni-portfolio{margin-left:0px;}
+#social-dole{text-align:left;margin-left:30px;}
+#paticka-pravo{max-width:60%;}
+#paticka-stred{width:100%;margin-bottom:40px;font-size:1.5em;}
+#nav-dole{position:fixed;display:inline;}
+.polozka{width:100%;clear:both;}
+.slider{height:600px;}
+.entry-content-sirsi img{margin:5px 0;width:100%;height:auto;}
+.entry-content img{margin:5px 0;width:100%;height:auto;}
+#logo {
+	position: absolute;
+	top: -10%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 180px;
+	height: 180px;
+}
+#logo img {
+	width: inherit;
+	//for ie8   width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+}
+
+.footer-title
+{
+	margin-top:5px;
+	font-size:15px;
+}
+
+.footer-link
+{
+	font-size:13px;
+	color:lightgrey;
+}
+
+.footer-stres-button
+{
+	background:url(bila-kontakt.png) no-repeat;
+	padding-top:9px;
+}
+
+.footer-colli
+{
+	margin-left:-30px;
+}
+
+.polozka-image
+{
+	margin-bottom:40px;
+	font-size:1.5em;
+	margin-left:0px;
+	background:url(bila-kontakt.png) no-repeat;
+	padding-top:9px;
+}
+
+.footer-table
+{
+	width: 70%; 
+	margin-left: -2px;
+}
+
+.footer-table td
+{
+	vertical-align: top; 
+	width: 50%;
+}
+
+
+section {
+	width: 100%;
+	min-height: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center; 
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover
+}
+
+ #homes { 
+ 	background-image:url("clickin_bg.jpg") center; 
+ }
+
+ #slide3 {
+
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center; 
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover
+}
+
+
+ .slide3 { 
+ 	background-image:url("clickin_bg.jpg"); 
+ }
+
+.spmenu-position
+{
+	top: -158px;
+}
+
+
+.strana-position
+{
+	margin-right: 0px;
+}
+
+.footer-colli a img
+{
+	width:35px;
+	height:35px;
+}
+
