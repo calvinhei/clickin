@@ -272,17 +272,3 @@ $(window).scroll(function() {
       });
   });
  
-
-var MTUserId='574e0598-bf12-4637-b66e-0655389ba99f';
-var MTFontIds = new Array();
-
-MTFontIds.push("774932"); // Futura® W02 Book 
-MTFontIds.push("774938"); // Futura® W02 Medium 
-(function() {
-var mtTracking = document.createElement('script');
-mtTracking.type='text/javascript';
-mtTracking.async='true';
-mtTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//www.fast.fonts.net/lt/trackingCode.js';
-
-(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(mtTracking);
-})();
